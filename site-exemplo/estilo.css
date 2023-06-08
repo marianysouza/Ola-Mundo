@@ -1,9 +1,9 @@
 h1 {
   color: green;
+
 }
 
-main{
-  background-color: darkgray;
-  border-radius: 10px;  
-  box-shadow: 3px 3px 5px black;
+article{
+  background-color: coral;
+  border-radius: 5px;;
 }
