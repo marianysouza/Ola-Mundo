@@ -1,5 +1,16 @@
+:root{
+    --cor_fraca:#ece0d1;
+    --cor_media_fraca:#dbc1ac;
+    --cor_media: #967259;
+    --cor_media_forte: #634832;
+    --cor_forte: #38220f;
+    --fonte: Arial, Helvetica, sans-serif;
+}
+
+
 body {
-    background-color: #ece0d1;
+    font-family: var(--fonte);
+    background-color: var(--cor_fraca);    
 }
 
 h1{
@@ -9,6 +20,7 @@ h1{
     color: #38220f;
 }
 
-li{
-    text-decoration: none;
+ul{
+    list-style-type: '\2714\0020\0020';
+    
 }
