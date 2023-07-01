@@ -1,26 +1,80 @@
+@font-face{
+    font-family: 'Bebas';
+    src: url(../fontes/BebasNeue-Regular.otf) format('opentype');
+    font-weight: normal;
+}
+
+
+
 :root{
     --cor_fraca:#ece0d1;
     --cor_media_fraca:#dbc1ac;
     --cor_media: #967259;
     --cor_media_forte: #634832;
     --cor_forte: #38220f;
-    --fonte: Arial, Helvetica, sans-serif;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;    
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
-    font-family: var(--fonte);
+    font-family: var(--fonte-padrao);
     background-color: var(--cor_fraca);    
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    text-align: center;
-    color: #38220f;
+main{
+    /* largura dos celulares bem antigos */
+    min-width: 260px; 
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-ul{
-    list-style-type: '\2714\0020\0020';
-    
+main img {
+    width: 100%;
+}
+
+header{
+   background-image: linear-gradient(to bottom, var(--cor_media), var(--cor_media_forte));
+    min-height: 80px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-padrao);
+}
+
+header > h2{
+    color: var(--cor_media_forte);
+}
+
+nav{
+    background-color: var(--cor_media);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);    
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+
+nav >a:hover{
+    background-color: var(--cor_media_fraca);
+    color: var(--cor_media_forte);
 }
